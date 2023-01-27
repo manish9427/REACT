@@ -1,10 +1,33 @@
-import React from "react";
+import { useState } from "react";
 
-function Child() {
+function Child({ data, sendDataToParent }) {
+  const [childData, setChildData] = useState("");
   return (
-    <div>
+    <div
+      style={{
+        border: "2px solid black",
+        padding: "30px",
+        margin: "30px",
+      }}
+    >
       <h2>Child Component</h2>
+      <input
+        type="text"
+        placeholder="Enter Some Text"
+        onChange={(e) => {
+          setChildData(e.target.value);
+        }}
+      />
+      <button
+        onClick={() => {
+          sendDataToParent(childData);
+        }}
+      >
+        Send Data To Parent
+      </button>
+      <p style={{ color: "black" }}>{data}</p>
     </div>
   );
 }
+
 export default Child;
