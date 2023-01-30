@@ -6,6 +6,7 @@ import Post from "./Components/Post/Post";
 import Parent from "./Components/Parent-Child/Parent";
 import ShowProfile from "./Components/LifeCycle/ShowProfile";
 import Profile2 from "./Components/LifeCycle/Profile2";
+import ShowCounter from "./Components/CounterApp/ShowCounter";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Parent />
       <ShowProfile />
       <Profile2 />
+      <ShowCounter />
     </div>
   );
 }
