@@ -5,20 +5,23 @@ export default function ShowCounter() {
   return (
     <div>
       {state ? <CounterApp /> : <div></div>}
-      <button
-        onClick={() => {
-          setState(true);
-        }}
-      >
-        Show Counter
-      </button>
-      <button
-        onClick={() => {
-          setState(false);
-        }}
-      >
-        Hide Counter
-      </button>
+      <div style={{ margin: "10px auto" }}>
+        <button
+          onClick={() => {
+            setState(true);
+          }}
+        >
+          Show Counter
+        </button>
+        &nbsp;&nbsp;&nbsp;
+        <button
+          onClick={() => {
+            setState(false);
+          }}
+        >
+          Hide Counter
+        </button>
+      </div>
     </div>
   );
 }
