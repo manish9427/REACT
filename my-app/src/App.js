@@ -7,6 +7,8 @@ import Parent from "./Components/Parent-Child/Parent";
 import ShowProfile from "./Components/LifeCycle/ShowProfile";
 import Profile2 from "./Components/LifeCycle/Profile2";
 import ShowCounter from "./Components/CounterApp/ShowCounter";
+import Timer from "./Components/Timer/Timer";
+import DOM from "./Components/Timer/DOM";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <ShowProfile />
       <Profile2 />
       <ShowCounter />
+      <Timer />
+      <DOM />
     </div>
   );
 }

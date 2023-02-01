@@ -4,7 +4,7 @@ export default function CounterApp() {
   // const [name, setName] = useState("Manish");
   const [name, setName] = useState("");
   useEffect(() => {
-    console.log("Called fun is Called");
+    // console.log("Called fun is Called");
     localStorage.setItem("myname", "Manish Verma");
     // document.title = "Manish Verma";
     document.title = name + " Count Value is: " + state;
@@ -13,7 +13,8 @@ export default function CounterApp() {
       // localStorage.removeItem("myname");
       //   alert("Component will Unmount");
     };
-  });
+  }, [name, state]);
+
   return (
     <div>
       <h1>Counter App:{state}</h1>
