@@ -9,6 +9,7 @@ import Profile2 from "./Components/LifeCycle/Profile2";
 import ShowCounter from "./Components/CounterApp/ShowCounter";
 import Timer from "./Components/Timer/Timer";
 import DOM from "./Components/Timer/DOM";
+import A from "./Components/Context/A";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ShowCounter />
       <Timer />
       <DOM />
+      <A />
     </div>
   );
 }
