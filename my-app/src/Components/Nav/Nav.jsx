@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext } from "react";
+import { ctx } from "../Context/myContext";
 var myStyle = {
   display: "flex",
   backgroundColor: "black",
@@ -6,13 +7,20 @@ var myStyle = {
   justifyContent: "space-evenly",
 };
 function Nav() {
+  const { setIsLoggedIn } = useContext(ctx);
   return (
     <div style={myStyle}>
       <h3>Home</h3>
       <h3>Profile</h3>
       <h3>ContactUs</h3>
       <div style={{ marginTop: "18px" }}>
-        <button>LogOut</button>
+        <button
+          onClick={() => {
+            setIsLoggedIn(false);
+          }}
+        >
+          LogOut
+        </button>
       </div>
     </div>
   );
