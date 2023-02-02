@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Counter from "./Components/Counter/Counter";
 import AddTodo from "./Components/Todo/AddTodo";
 import TotalAmount from "./Components/Amount/Amount";
@@ -10,8 +11,12 @@ import ShowCounter from "./Components/CounterApp/ShowCounter";
 import Timer from "./Components/Timer/Timer";
 import DOM from "./Components/Timer/DOM";
 import A from "./Components/Context/A";
+import Nav from "./Components/Nav/Nav";
+import Main from "./Components/Context/Main";
+import { ctx } from "./Components/Context/myContext";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="App">
       <Counter />
@@ -25,6 +30,12 @@ function App() {
       <Timer />
       <DOM />
       <A />
+
+      <ctx.Provider value={isLoggedIn}>
+        {isLoggedIn && <Nav />}
+        <Nav />
+        <Main />
+      </ctx.Provider>
     </div>
   );
 }
