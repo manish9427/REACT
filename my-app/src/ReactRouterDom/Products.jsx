@@ -37,18 +37,13 @@ function Products() {
                   margin: "10px",
                 }}
               >
-                {/* <Link to="/productsdetails">
-                  <img src={state.image} alt="" height="300px" width={300} />
-                </Link> */}
-                <Link to={`productsdetails/${state.id}`}>
-                  <img src={state.image} alt="" height="300px" width={300} />
-                </Link>
+                <img src={state.image} alt="" height="300px" width={300} />
                 <h3>{state.title}</h3>
                 <p>${state.price}</p>
                 {/* <Link to="/productsdetails">
                   <button>More Information</button>
                 </Link> */}
-                <Link to={`productsdetails/${state.id}/${state.price}`}>
+                <Link to={`/productsdetails/${state.id}/${state.price}`}>
                   <button>More Information</button>
                 </Link>
               </div>
