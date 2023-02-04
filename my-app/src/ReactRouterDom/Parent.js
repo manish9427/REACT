@@ -4,6 +4,7 @@ import Home from "./Home";
 import Profile from "./Profile";
 import Products from "./Products";
 import ContactUs from "./ContactUs";
+import ProductsDetails from "./ProductsDetails";
 import { Route, Routes } from "react-router-dom";
 
 function Parent() {
@@ -19,6 +20,10 @@ function Parent() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route
+          path="/productsdetails/:id/:price"
+          element={<ProductsDetails />}
+        />
       </Routes>
     </div>
   );
