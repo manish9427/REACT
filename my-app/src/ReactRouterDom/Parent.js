@@ -1,11 +1,13 @@
 import "./Parent.css";
 import NavBar from "./NavBar";
-import Home from "./Home";
-import Profile from "./Profile";
-import Products from "./Products";
-import ContactUs from "./ContactUs";
-import ProductsDetails from "./ProductsDetails";
-import { Route, Routes } from "react-router-dom";
+import RoutesComp from "./Routes";
+
+// import Home from "./Home";
+// import Profile from "./Profile";
+// import Products from "./Products";
+// import ContactUs from "./ContactUs";
+// import ProductsDetails from "./ProductsDetails";
+// import { Route, Routes } from "react-router-dom";
 
 function Parent() {
   return (
@@ -15,7 +17,7 @@ function Parent() {
       <Profile />
       <Products />
       <ContactUs /> */}
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/products" element={<Products />} />
@@ -24,7 +26,8 @@ function Parent() {
           path="/productsdetails/:id/:price"
           element={<ProductsDetails />}
         />
-      </Routes>
+      </Routes> */}
+      <RoutesComp />
     </div>
   );
 }

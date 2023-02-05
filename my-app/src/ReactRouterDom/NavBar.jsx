@@ -1,5 +1,31 @@
 import { Link } from "react-router-dom";
 function NavBar(props) {
+  var routes = [
+    {
+      title: "Home",
+      path: "/",
+    },
+    {
+      title: "Users",
+      path: "/users",
+    },
+    {
+      title: "Profile",
+      path: "/profile",
+    },
+    {
+      title: "Products",
+      path: "/products",
+    },
+    {
+      title: "ContactUs",
+      path: "/contact",
+    },
+    {
+      title: "Login",
+      path: "/login",
+    },
+  ];
   var divStyle = {
     padding: "20px",
     backgroundColor: "black",
@@ -15,7 +41,7 @@ function NavBar(props) {
       {/* <a style={aStyle} href="/">
         Home
       </a> */}
-      <Link style={aStyle} to="/">
+      {/* <Link style={aStyle} to="/">
         Home
       </Link>
       <Link style={aStyle} to="/products">
@@ -26,7 +52,14 @@ function NavBar(props) {
       </Link>
       <Link style={aStyle} to="/contact">
         Contact Us
-      </Link>
+      </Link> */}
+      {routes.map((route, index) => {
+        return (
+          <Link style={aStyle} Key={index + 1} to={route.path}>
+            {route.title}
+          </Link>
+        );
+      })}
     </div>
   );
 }
