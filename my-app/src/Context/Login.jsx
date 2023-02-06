@@ -8,15 +8,19 @@ var myStyle = {
   padding: "50px",
 };
 
-export default function Login() {
+function Login() {
   const { setIsLoggedIn } = useContext(ctx);
   const [state, setState] = useState({
     user: "",
     pass: "",
   });
 
-  const handleLogin = () => {
-    if (state.user === "manish9427" && state.pass === "9427") {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (
+      state.user === process.env.REACT_APP_USERNAME &&
+      state.pass === process.env.REACT_APP_PASSWORD
+    ) {
       setIsLoggedIn(true);
     } else {
       alert("Invalid Credentials");
@@ -58,3 +62,4 @@ export default function Login() {
     </div>
   );
 }
+export default Login;

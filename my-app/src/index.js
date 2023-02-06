@@ -1,14 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import "./index.css";
+import ReactDOM from "react-dom/client";
 // import App from "./App";
-import Parent from "../src/ReactRouterDom/Parent";
 import { BrowserRouter } from "react-router-dom";
+import AppContext from "./Context/AppContext";
+// import AppRouter from "../src/Router/AppRouter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     {/* <App /> */}
-    <Parent />
+    <AppContext />
+    {/* <AppRouter /> */}
   </BrowserRouter>
 );

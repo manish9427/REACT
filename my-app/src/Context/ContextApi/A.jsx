@@ -1,5 +1,5 @@
 import { useState } from "react";
-import myContext from "./myContext";
+import myContext from "../../Context/myContext";
 import B from "./B";
 
 var myStyle = {

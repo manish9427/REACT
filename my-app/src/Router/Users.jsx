@@ -2,16 +2,30 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 function Users() {
   const [state, setState] = useState([]);
-  const [page, setPage] = useState(1);
-  const [searchParam, setSearchParam] = useSearchParams();
+  // const [page, setPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
 
+  let initialPage = searchParams.get("page");
+  const [page, setPage] = useState(Number(initialPage));
+  console.log(initialPage, typeof initialPage);
+
+  // console.log(searchParams);
   useEffect(() => {
     getUsers();
-  }, [state]);
+  }, [page]);
+
+  useEffect(() => {
+    setSearchParams({
+      // page: page,
+      page,
+      // name: "manish",
+      // sort: "asc",
+    });
+  }, [page]);
   const getUsers = async () => {
     var res = await fetch(`https://reqres.in/api/users?page=${page}`);
     var data = await res.json();
-    console.log(data);
+    // console.log(data);
     setState(data.data);
   };
   const handlePage = (value) => {

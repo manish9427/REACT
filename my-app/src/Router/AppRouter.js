@@ -1,4 +1,4 @@
-import "./Parent.css";
+import "./AppRouter.css";
 import NavBar from "./NavBar";
 import RoutesComp from "./Routes";
 
@@ -9,7 +9,7 @@ import RoutesComp from "./Routes";
 // import ProductsDetails from "./ProductsDetails";
 // import { Route, Routes } from "react-router-dom";
 
-function Parent() {
+function AppRouter() {
   return (
     <div className="App">
       <NavBar />
@@ -32,4 +32,4 @@ function Parent() {
   );
 }
 
-export default Parent;
+export default AppRouter;
