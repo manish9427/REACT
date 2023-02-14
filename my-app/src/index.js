@@ -1,15 +1,17 @@
 import "./index.css";
 import ReactDOM from "react-dom/client";
-// import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import AppContext from "./Context/AppContext";
+// import App from "./App";
+// import AppContext from "./Context/AppContext";
 // import AppRouter from "../src/Router/AppRouter";
+import AppRedux from "./Redux/AppRedux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     {/* <App /> */}
-    <AppContext />
+    {/* <AppContext /> */}
     {/* <AppRouter /> */}
+    <AppRedux />
   </BrowserRouter>
 );
