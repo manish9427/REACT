@@ -1,5 +1,5 @@
 import "./AppRedux.css";
-import Input from "./Input";
+import Input from "../Components/Input/Input";
 
 function AppRedux() {
   return (
