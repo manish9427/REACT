@@ -3,10 +3,9 @@ import { useState } from "react";
 import { myAction } from "../../myAction/myAction";
 function Input(props) {
   const [state, setState] = useState("");
-  const sendDataToAction=()={
-    myAction(state)
-
-  }
+  const sendDataToAction = () => {
+    myAction(state);
+  };
   return (
     <div className={styles.main}>
       <h1>Input Component</h1>
