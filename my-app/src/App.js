@@ -9,7 +9,8 @@ import "./App.css";
 // import ShowCounter from "./Components/CounterApp/ShowCounter";
 // import Timer from "./Components/Timer/Timer";
 // import DOM from "./Components/Timer/DOM";
-import ApiFetch from "./Components/fetch/ApiFetch";
+import ApiFetch from "./Masai/fetch/ApiFetch";
+import MyComponent from "./ChatGpt/TrackButton";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Timer />
       <DOM /> */}
       <ApiFetch />
+      <MyComponent />
     </div>
   );
 }
