@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const mystyle = {
   padding: "30px",
@@ -10,6 +10,15 @@ const mystyle = {
 
 const Counter = () => {
   const [state, setState] = useState(0);
+  useEffect(() => {
+    const value = localStorage.getItem("count");
+    if (value) {
+      setState(parseInt(value));
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("count", state);
+  }, [state]);
 
   const add = () => {
     setState(state + 1);
@@ -19,12 +28,16 @@ const Counter = () => {
       setState(state - 1);
     }
   };
+  const reset = () => {
+    setState(0);
+  };
   return (
     <div style={mystyle}>
       <h1>count</h1>
       <h1>{state}</h1>
       <button onClick={add}>ADD</button> &nbsp;
-      <button onClick={sub}>SUB</button>
+      <button onClick={sub}>SUB</button> &nbsp;
+      <button onClick={reset}>RESET</button>
     </div>
   );
 };
