@@ -12,7 +12,6 @@ import "./App.css";
 // import ApiFetch from "./Masai/fetch/ApiFetch";
 // import MyComponent from "./ChatGpt/TrackButton";
 // import Fetch from "./Implementation/Fetch";
-import Count from "./manish/Counter";
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
       {/* <ApiFetch /> */}
       {/* <MyComponent /> */}
       {/* <Fetch /> */}
-      <Count />
     </div>
   );
 }
