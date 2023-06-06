@@ -1,9 +1,9 @@
-# REACT
+## REACT
 
-- manish
+# manish
 
-* counter
-* Timer
-* Stopwatch
-* todo App
-* pagination
+- counter
+- Timer
+- Stopwatch
+- todo App
+- pagination
