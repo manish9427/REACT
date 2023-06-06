@@ -1,6 +1,6 @@
 # REACT
 
-- implemanatation
+- manish
 
 * counter
 * Timer
