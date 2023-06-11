@@ -5,9 +5,9 @@ import ReactDOM from "react-dom/client";
 // import AppContext from "./Context/AppContext";
 // import AppRouter from "../src/Router/AppRouter";
 // import AppRedux from "./Redux/AppRedux/AppRedux";
-import AppManish from "./manish/AppManish";
 // import { provider } from "react-redux";
 // import myStore from "./Redux/reduxStore/Store";
+import Target from "./Target/Target";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,9 +15,9 @@ root.render(
   // <App />
   // {/* <AppContext /> */}
   // {/* <AppRouter /> */}
-  <AppManish />
   // </BrowserRouter>
   // <provider store={myStore}>
   //   <AppRedux />
   // </provider>
+  <Target />
 );

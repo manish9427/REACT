@@ -1,4 +1,3 @@
-import "./AppManish";
 import { useState } from "react";
 
 export default function Timer() {
@@ -25,7 +24,7 @@ export default function Timer() {
   }
 
   return (
-    <div className="App">
+    <div>
       <h1>Timer</h1>
       <h3>{state}</h3>
       <button onClick={start}>Start </button>&nbsp;
