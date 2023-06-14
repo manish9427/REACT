@@ -23,3 +23,4 @@ function greet(name) {
 
 // Execute the greet function with the argument "John" after a delay of 1 second
 setTimeout(greet, 1000, "John");
+setTimeout(greet, 1000, "manish");
