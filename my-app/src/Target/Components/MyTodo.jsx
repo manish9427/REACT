@@ -19,7 +19,11 @@ const MyTodo = () => {
         onChange={(e) => setInputValue(e.target.value)}
       />
       <button onClick={addTodo}>Add</button>
-      <ul>{todo.map((todo, index) => {})}</ul>
+      <ul>
+        {todo.map((todo, index) => (
+          <li>{todo}</li>
+        ))}
+      </ul>
     </div>
   );
 };
