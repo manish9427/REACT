@@ -43,25 +43,47 @@
 // };
 // export default Counter;
 
-import { useState } from "react";
-const Counter = () => {
-  const [count, setCount] = useState(0);
+//------------------------------------------------------------------------------------
+
+// import { useState } from "react";
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const myStyle = {
+//     padding: "30px",
+//     width: "300px",
+//     boxShadow: "0px 0px 10px black",
+//     margin: "0px auto",
+//   };
+
+//   return (
+//     <div style={myStyle}>
+//       <h1>Counter</h1>
+//       <p>{count}</p>
+//       <button onClick={() => setCount(count + 1)}>Add</button>
+//       &nbsp;
+//       <button onClick={() => setCount(count - 1)}>Sub</button>&nbsp;
+//       <button onClick={() => setCount(0)}>Reset</button>
+//     </div>
+//   );
+// };
+// export default Counter;
+
+// --------------------------------------------------------------------------------
+function Counter() {
   const myStyle = {
-    padding: "30px",
+    margin: "10px auto",
     width: "300px",
     boxShadow: "0px 0px 10px black",
-    margin: "0px auto",
+    padding: "30px",
   };
-
   return (
     <div style={myStyle}>
-      <h1>Counter</h1>
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Add</button>
-      &nbsp;
-      <button onClick={() => setCount(count - 1)}>Sub</button>&nbsp;
-      <button onClick={() => setCount(0)}>Reset</button>
+      <h1>Counter App</h1>
+      <p>hii</p>
+      <button>Add</button>
+      <button>Sub</button>
+      <button>Reset</button>
     </div>
   );
-};
+}
 export default Counter;
