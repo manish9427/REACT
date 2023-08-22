@@ -12,3 +12,7 @@ Component are Independent and Reusable Bits of code
 - indivisual peice of code in react is called as component
 
 # What is JSX ?
+
+jsxx stand for javascript extension or xml
+
+it convert html tag into react element
