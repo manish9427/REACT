@@ -25,3 +25,28 @@ it convert html tag into react element
 - no if else condition inside jsx but ternary operator is okay
 - Attribute
   class =className
+
+# Component
+
+- react component are independent and reusable unit of code
+- a piece of code which is indivisual and reusable we call that component
+- components are building block of react
+- it is same as function in js but return HTML
+
+# types of components
+
+- class
+- function
+
+# Props
+
+by the help props of we can easily transfer our data from one component to another
+
+- props stand for properties
+- props are used to transfer data from one component to another
+- props are read only
+- props are just like function in javascript
+
+props pass as an object
+key="value"
+{props.key}
