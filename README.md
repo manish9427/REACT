@@ -50,3 +50,24 @@ by the help props of we can easily transfer our data from one component to anoth
 props pass as an object
 key="value"
 {props.key}
+
+# state
+
+state is an object which store data of an component
+
+- the state is an inbuilt react object that is used to contain data or information about the component
+
+# Rules of Hooks
+
+- must be written inside functional component
+- must be import in component
+- must be call at the top level of component
+- cannot be conditional
+
+# useState ()
+
+() => number, string, array, object, boolean
+
+it return two things
+1 current state
+2 function => it helps in updating state

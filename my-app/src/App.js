@@ -4,6 +4,8 @@ import Rules from "./Youtube/RulesJsx";
 import ApiFetch from "./Implemetation/Apifetch";
 import Header from "./Youtube/Header";
 import PropsExample from "./Youtube/PropsExample";
+import StateLearning from "./Youtube/StateLearning";
+import UseStateHook from "./Youtube/UseStateHook";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Rules />
       <Header></Header>
       <PropsExample fullname="manish verma" />
+      <StateLearning />
+      <UseStateHook />
     </div>
   );
 }
