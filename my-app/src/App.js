@@ -6,6 +6,7 @@ import Header from "./Youtube/Header";
 import PropsExample from "./Youtube/PropsExample";
 import StateLearning from "./Youtube/StateLearning";
 import UseStateHook from "./Youtube/UseStateHook";
+import HookUseEffect from "./Youtube/HookUseEffect";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <PropsExample fullname="manish verma" />
       <StateLearning />
       <UseStateHook />
+      <HookUseEffect />
     </div>
   );
 }
