@@ -71,3 +71,20 @@ state is an object which store data of an component
 it return two things
 1 current state
 2 function => it helps in updating state
+
+# useEffect ()
+
+we use this hook when ever we want to perform side effect task in our functional component
+
+side effect operation
+
+- setTimeout
+- setInterval
+- directly update our DOM
+- data fetch
+
+useEffect(function,)
+
+- when ever state update useEffect run
+
+(function , [])
