@@ -94,3 +94,11 @@ useEffect(function,)
 by the help of this hook we can easily manuplate our DOM
 
 - dom manuplate
+
+# props drilling
+
+props are used to tranfer data fron one component to another
+
+- how to avoid props drillings
+  using Context Api
+  useContext hook

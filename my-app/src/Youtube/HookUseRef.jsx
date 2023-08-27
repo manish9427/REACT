@@ -32,6 +32,8 @@ const HookUseRef = () => {
       &nbsp;
       <button onClick={Reset}>Reset</button>
       <button onClick={handleInput}>handle input</button>
+      <h1>state = {name}</h1>
+      <p>useRef={refElement.current.value}</p>
     </div>
   );
 };

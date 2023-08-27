@@ -8,6 +8,7 @@ import StateLearning from "./Youtube/StateLearning";
 import UseStateHook from "./Youtube/UseStateHook";
 import HookUseEffect from "./Youtube/HookUseEffect";
 import HookUseRef from "./Youtube/HookUseRef";
+import PropsDrilling from "./Youtube/props drilling/PropsDrilling";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <UseStateHook />
       <HookUseEffect />
       <HookUseRef />
+      <PropsDrilling />
     </div>
   );
 }
