@@ -102,3 +102,5 @@ props are used to tranfer data fron one component to another
 - how to avoid props drillings
   using Context Api
   useContext hook
+
+# Context Api
