@@ -1,7 +1,10 @@
 import React from "react";
+import { data } from "./ParentClass";
+import { gender } from "./ParentClass";
 
 const LastChild = () => {
-  return <div>LastChild</div>;
+  <div>LastChild</div>;
+  return {};
 };
 
 export default LastChild;
