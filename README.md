@@ -105,6 +105,8 @@ props are used to tranfer data fron one component to another
 
 # Context Api
 
+Create , provide , consume
+
 # useContext
 
 # useMemo
