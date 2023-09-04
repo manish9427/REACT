@@ -107,6 +107,17 @@ props are used to tranfer data fron one component to another
 
 Create , provide , consume
 
+steps
+
+- createContext()
+- wrap the component in data.Provider
+- export data
+- import data
+- data.Consumer
+- allowed only one function
+- inside return only
+- for multiple data use nested
+
 # useContext
 
 # useMemo
