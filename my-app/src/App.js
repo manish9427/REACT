@@ -7,7 +7,7 @@ import UseStateHook from "./Youtube/UseStateHook";
 import HookUseEffect from "./Youtube/HookUseEffect";
 import HookUseRef from "./Youtube/HookUseRef";
 import PropsDrilling from "./Youtube/props drilling/PropsDrilling";
-import ParentClass from "./Youtube/context api/ParentClass";
+import LastChild from "./Youtube/context api/LastChild";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <HookUseEffect />
       <HookUseRef />
       <PropsDrilling />
-      <ParentClass />
+      <LastChild />
     </div>
   );
 }

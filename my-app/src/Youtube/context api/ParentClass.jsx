@@ -5,14 +5,14 @@ const data = createContext();
 const gender = createContext();
 
 const ParentClass = () => {
-  const name = "Msnish Verma";
+  const name = "Manish Verma";
   return (
-    <data.Provider value={name}>
-      <gender.Provider value={gender}>
-        <h1>ParentClass</h1>
+    <>
+      <h1>ParentClass</h1>
+      <data.Provider value={name}>
         <FirstChild />
-      </gender.Provider>
-    </data.Provider>
+      </data.Provider>
+    </>
   );
 };
 
