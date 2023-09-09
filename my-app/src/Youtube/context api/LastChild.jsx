@@ -1,18 +1,26 @@
 import React from "react";
-import { data } from "./ParentClass";
 import { gender } from "./ParentClass";
+import { data } from "./ParentClass";
 
 const LastChild = () => {
   return (
-    <div>
-      <h1>LastChild</h1>
+    <>
       <data.Consumer>
         {(name) => {
-          console.log(name);
-          return <h1>my name is {name}</h1>;
+          return (
+            <gender.Consumer>
+              {(gen) => {
+                return (
+                  <h1>
+                    my name is {name} and gender {gen}
+                  </h1>
+                );
+              }}
+            </gender.Consumer>
+          );
         }}
       </data.Consumer>
-    </div>
+    </>
   );
 };
 

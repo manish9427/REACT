@@ -3,16 +3,25 @@ import FirstChild from "./FirstChild";
 
 const data = createContext();
 const gender = createContext();
+const style = {
+  width: "500px",
+  margin: "10px auto",
+  padding: "30px",
+  boxShadow: "0px 0px 10px black",
+};
 
 const ParentClass = () => {
-  const name = "Manish Verma";
+  const name = "Manish";
+  const gen = "Male";
   return (
-    <>
-      <h1>ParentClass</h1>
+    <div style={style}>
+      <h1>Context APi</h1>
       <data.Provider value={name}>
-        <FirstChild />
+        <gender.Provider value={gen}>
+          <FirstChild />
+        </gender.Provider>
       </data.Provider>
-    </>
+    </div>
   );
 };
 
