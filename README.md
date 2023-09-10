@@ -109,15 +109,38 @@ Create , provide , consume
 
 steps
 
-- createContext()
-- wrap the component in data.Provider
-- export data
-- import data
+- import createContext
+- createContext() // cosnt data =createContext()
+- wrap the component in data.Provider // <data.Provider value={name}>
+- export {data}
+
+- import {data}
 - data.Consumer
 - allowed only one function
 - inside return only
 - for multiple data use nested
 
+return(
+<>
+<data.Consumer>
+{
+(name)=>{
+return (my name is {name})
+}
+}
+</data.Consumer>
+<>
+)
+
+<data.Provider value={{name:"xyz", gender:"Female"}}></<data.Provider>
+
 # useContext
+
+if we want to pass the data from our parenet component to our lower component without passing that data to each and every component
+
+const name = useContext(data)
+
+inside return
+{name}
 
 # useMemo
