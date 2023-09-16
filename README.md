@@ -156,3 +156,26 @@ Redux is a predictable state container in javascript app
 - Redux is a State Container
 
 ## Core concept of Redux
+
+- Store - Holds State of your Applications
+- Action - Describes the changes in the state of application
+- Reducer - Actually carries out the state transition depending on the action
+
+Example - Book shop
+
+shop(store) <----> shopkeeper(Reducer) <---> customer(action)
+
+## Rules of Redux
+
+- The state of uour application is stored in an object tree within a single store.
+  {
+  NumberOfBooks:10
+  }
+- only way to change the state is to emit an action, an object describing what happened.
+  {
+  Type:"buyBook"
+  }
+- to specify how the state tree is transformed by actions, we write pure reducer
+
+=> How does Redux works
+so what ever the state which is there in our javascript/React appliction we keep that state into redux store after that if we want to change state we have to send action from application to reducer than it will make changes into our state
