@@ -144,3 +144,15 @@ inside return
 {name}
 
 # useMemo
+
+<Hr>
+
+# Redux
+
+Redux is a predictable state container in javascript app
+
+- redux is a library for javascript applications
+- you can use redux together with React or with any other view library(Angular , Vue)
+- Redux is a State Container
+
+## Core concept of Redux
