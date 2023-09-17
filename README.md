@@ -179,3 +179,10 @@ shop(store) <----> shopkeeper(Reducer) <---> customer(action)
 
 => How does Redux works
 so what ever the state which is there in our javascript/React appliction we keep that state into redux store after that if we want to change state we have to send action from application to reducer than it will make changes into our state
+
+application - action - reducer - store - application
+
+## installation of redux
+
+- npm i redux
+- npm i react-redux
