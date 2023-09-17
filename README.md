@@ -186,3 +186,20 @@ application - action - reducer - store - application
 
 - npm i redux
 - npm i react-redux
+
+## Actions
+
+- Actions are javascript object that contains information
+- Actions are the only source of information for the store. It only tells us what has happened
+- Actions have a type property and it should be defined in string constraint
+- it is compulsory to include the type property in the object
+
+- Syntax
+  const Actions(name any thing)={
+  type(compulasory):"buyBook"
+  }
+
+  Actions -> import {name}
+  Types -> export const name = "name"
+
+  actionCreater(function) -> return action
