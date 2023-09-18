@@ -104,3 +104,5 @@
 - use of exact ect ...
 
 # ------------Redux--------------------
+
+## what is the flow of redux
