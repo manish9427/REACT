@@ -106,3 +106,25 @@
 # ------------Redux--------------------
 
 ## what is the flow of redux
+
+## can we have multiple reducer
+
+yes
+
+## can we have multiple stores
+
+## what is reducer in redux
+
+## why reducer is a pure function
+
+## why state is immutable in redux
+
+## what is redux midddleware
+
+## what is the difference between redux thunk and saga
+
+## how to connect react with redux
+
+## how can we access a redux store outside a react component
+
+## how can we add multiple middleware to redux
