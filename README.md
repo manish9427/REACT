@@ -203,3 +203,15 @@ application - action - reducer - store - application
   Types -> export const name = "name"
 
   actionCreater(function) -> return action
+
+  files
+
+  - BookTypes.js
+  - BookAction.js
+
+  ## Reducer
+
+  - Reducer decides how the state of application changes depending upon the action sent to the store
+  - Reducer are the function that accepts state and action as parameter and returns the next state of the application
+
+  (peviousState,action) => new State
