@@ -12,7 +12,7 @@ const LastChild = () => {
               {(gen) => {
                 return (
                   <p>
-                    my name is {name} and gender {gen}
+                    my name is {name} and age {gen}
                   </p>
                 );
               }}

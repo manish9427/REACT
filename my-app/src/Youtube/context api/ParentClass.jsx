@@ -4,7 +4,7 @@ import FirstChild from "./FirstChild";
 const data = createContext();
 const gender = createContext();
 const style = {
-  width: "500px",
+  width: "300px",
   margin: "10px auto",
   padding: "30px",
   boxShadow: "0px 0px 10px black",

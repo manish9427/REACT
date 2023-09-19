@@ -6,7 +6,7 @@ const data = createContext();
 const style = {
   boxShadow: "0px 0px 10px black",
   width: "300px",
-  margin: "15px auto",
+  margin: "10px auto",
   padding: "30px",
 };
 const ClassA = () => {

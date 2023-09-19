@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const style = {
-  margin: "0px auto",
+  margin: "10px auto",
   boxShadow: "0px 0px 10px black",
   width: "300px",
   padding: "30px",
