@@ -8,6 +8,7 @@ import HookUseEffect from "./Youtube/HookUseEffect";
 import HookUseRef from "./Youtube/HookUseRef";
 import PropsDrilling from "./Youtube/props drilling/PropsDrilling";
 import ParentClass from "./Youtube/context api/ParentClass";
+import ClassA from "./Youtube/useContext/ClassA";
 import { Provider } from "react-redux";
 import store from "./Youtube/redux/reduxContainer/Store";
 
@@ -24,6 +25,7 @@ function App() {
         <HookUseRef />
         <PropsDrilling />
         <ParentClass />
+        <ClassA />
       </div>
     </Provider>
   );

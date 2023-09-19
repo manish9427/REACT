@@ -11,9 +11,9 @@ const LastChild = () => {
             <gender.Consumer>
               {(gen) => {
                 return (
-                  <h1>
+                  <p>
                     my name is {name} and gender {gen}
-                  </h1>
+                  </p>
                 );
               }}
             </gender.Consumer>

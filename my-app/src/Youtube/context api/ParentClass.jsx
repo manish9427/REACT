@@ -12,12 +12,12 @@ const style = {
 
 const ParentClass = () => {
   const name = "Manish";
-  const gen = "Male";
+  const age = 26;
   return (
     <div style={style}>
       <h1>Context APi</h1>
       <data.Provider value={name}>
-        <gender.Provider value={gen}>
+        <gender.Provider value={age}>
           <FirstChild />
         </gender.Provider>
       </data.Provider>
