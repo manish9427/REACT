@@ -8,20 +8,24 @@ import HookUseEffect from "./Youtube/HookUseEffect";
 import HookUseRef from "./Youtube/HookUseRef";
 import PropsDrilling from "./Youtube/props drilling/PropsDrilling";
 import ParentClass from "./Youtube/context api/ParentClass";
+import { Provider } from "react-redux ";
+import store from "./Youtube/redux/reduxContainer/Store";
 
 function App() {
   return (
-    <div className="App">
-      <Rules />
-      <Header></Header>
-      <PropsExample fullname="manish verma" />
-      <StateLearning />
-      <UseStateHook />
-      <HookUseEffect />
-      <HookUseRef />
-      <PropsDrilling />
-      <ParentClass />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Rules />
+        <Header></Header>
+        <PropsExample fullname="manish verma" />
+        <StateLearning />
+        <UseStateHook />
+        <HookUseEffect />
+        <HookUseRef />
+        <PropsDrilling />
+        <ParentClass />
+      </div>
+    </Provider>
   );
 }
 

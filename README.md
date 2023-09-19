@@ -215,3 +215,19 @@ application - action - reducer - store - application
   - Reducer are the function that accepts state and action as parameter and returns the next state of the application
 
   (peviousState,action) => new State
+
+- BookReducer.js
+
+## Redux Store
+
+- entire application contains single store
+- it is responsible for holding apllication state
+- getState() method gives access to state it holds
+- dispatch(action) method allow state to be updated
+- it has subscribe(listner) method as well by which we can register listeners.
+
+this method accept function (listner ) as a parameter which execute anytime when the state in redux store changes
+
+steps:-
+1- createStore -> "redux"
+2- Provider -> "react-redux"
