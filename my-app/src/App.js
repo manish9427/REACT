@@ -11,6 +11,7 @@ import ParentClass from "./Youtube/context api/ParentClass";
 import ClassA from "./Youtube/useContext/ClassA";
 import { Provider } from "react-redux";
 import store from "./Youtube/redux/reduxContainer/Store";
+import BookContainer from "./Youtube/redux/reduxContainer/BookContainer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <PropsDrilling />
         <ParentClass />
         <ClassA />
+        <BookContainer />
       </div>
     </Provider>
   );

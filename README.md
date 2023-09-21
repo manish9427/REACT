@@ -231,3 +231,16 @@ this method accept function (listner ) as a parameter which execute anytime when
 steps:-
 1- createStore -> "redux"
 2- Provider -> "react-redux"
+
+## React Redux + Hooks
+
+ReactRedux offers set of Hooks to subscribe to redux store and dispatch actions
+
+### useSelector Hook :-
+
+- useSelector is a hook rect-redux library provides to get hold of any state thst is maintained in the redux store
+
+Syntax-
+const xyz= useSelector(selector:function, equalityFn?:Function)
+
+Selector function accepts the redux store as its argument and return a value
