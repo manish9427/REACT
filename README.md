@@ -247,6 +247,8 @@ Selector function accepts the redux store as its argument and return a value
 
 - we access state with the help of this hook
 
+- BookContainer.ja
+
 ### useDispatch() Hook :-
 
 - we can upate with the help of this hook
@@ -254,3 +256,12 @@ Selector function accepts the redux store as its argument and return a value
 
 Syntax :-
 const dispatch = useDispatch()
+
+- return dispach function refrence and that we can store it in variable
+
+- BookContainer.js
+
+steps:-
+1- useDispatch
+2- import action function
+3- pass that function to your dispatch method where you call that function
