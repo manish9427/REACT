@@ -244,3 +244,13 @@ Syntax-
 const xyz= useSelector(selector:function, equalityFn?:Function)
 
 Selector function accepts the redux store as its argument and return a value
+
+- we access state with the help of this hook
+
+### useDispatch() Hook :-
+
+- we can upate with the help of this hook
+- this hook return a refrence to the dispatch function from the redux store . you may use it to dispatch actions as needed
+
+Syntax :-
+const dispatch = useDispatch()
