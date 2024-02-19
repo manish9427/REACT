@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import Timer from "./timer/Timer";
 
 const Manish = () => {
   return (
     <div className="manish">
-      <h1>Timer</h1>
+      <Timer />
     </div>
   );
 };
