@@ -2,16 +2,24 @@ import React, { useState } from "react";
 
 const Timer = () => {
   const [data, setData] = useState(0);
+  const [id, setId] = useState(null);
 
   const start = () => {
-    setData(data + 1);
+    const intervalId = setInterval(() => {
+      setData((x) => x + 1);
+    }, 1000);
+    setId(intervalId);
   };
+
   const stop = () => {
-    setData(data - 1);
+    clearInterval(id);
   };
+
   const reset = () => {
-    setData(1);
+    clearInterval(id);
+    setData(0);
   };
+
   return (
     <div>
       <h1>Timer</h1>
