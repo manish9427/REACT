@@ -3,6 +3,16 @@ import React, { useState } from "react";
 const Timer = () => {
   const [data, setData] = useState(0);
   const [id, setId] = useState(null);
+  const style = {
+    padding: "30px",
+    // margin: "0px 10px",
+    width: "300px",
+    boxShadow: "0px 0px 10px black",
+    textAlign: "centre",
+    justifyContent: "center",
+    AlignItem: "centre",
+    margin: "200px auto",
+  };
 
   const start = () => {
     const intervalId = setInterval(() => {
@@ -21,7 +31,7 @@ const Timer = () => {
   };
 
   return (
-    <div>
+    <div style={style}>
       <h1>Timer</h1>
       <p>{data}</p>
       <button onClick={start}>start</button>
