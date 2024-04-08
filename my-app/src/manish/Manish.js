@@ -1,5 +1,6 @@
 import Timer from "./timer/Timer";
 import StopWatch from "./stopwatch/StopWatch";
+import "./Manish.css";
 
 const Manish = () => {
   return (
