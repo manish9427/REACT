@@ -1,3 +1,16 @@
-.manish{
-    text-align: center;
+.manish {
+  text-align: center;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 25%; /* Set the width of each product to 25% to display four products per row */
+  padding: 10px;
+  box-sizing: border-box;
+}
+.imgFake {
+  width: 100px;
 }

@@ -1,12 +1,14 @@
 import Timer from "./timer/Timer";
 import StopWatch from "./stopwatch/StopWatch";
-import FetchData from "./fetch/FetchData";
+import UseFetchHook from "./hooks/UseFetchHook";
+import FakeStore from "./fakestore/FakeStore";
 import "./Manish.css";
 
 const Manish = () => {
   return (
     <div className="manish">
-      <FetchData />
+      <FakeStore />
+      {/* <UseFetchHook /> */}
       {/* <StopWatch /> */}
       {/* <Timer /> */}
     </div>

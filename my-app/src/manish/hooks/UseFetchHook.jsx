@@ -1,6 +1,6 @@
 import react from "react";
 import { useEffect, useState } from "react";
-const FetchData = () => {
+const UseFetchHook = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -35,4 +35,4 @@ const FetchData = () => {
   );
 };
 
-export default FetchData;
+export default UseFetchHook;
