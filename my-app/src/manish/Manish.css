@@ -4,14 +4,13 @@
 .product-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .product {
-  width: 25%; /* Set the width of each product to 25% to display four products per row */
-  padding: 10px;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 10px black;
+  width: 25%;
   padding: 30px;
+  box-shadow: 0px 0px 10px black;
   margin: 10px;
 }
 .imgFake {
