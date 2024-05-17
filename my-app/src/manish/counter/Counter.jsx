@@ -16,9 +16,9 @@ const Counter = () => {
     <div>
       <h1>Counter</h1>
       <p>{data}</p>
-      <button onClick={add}>start</button>
-      <button onClick={sub}>stop</button>
-      <button onClick={reset}>reset</button>
+      <button onClick={add}>ADD</button>
+      <button onClick={sub}>SUB</button>
+      <button onClick={reset}>CLEAR</button>
     </div>
   );
 };
