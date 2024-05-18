@@ -29,6 +29,7 @@ const FakeStore = () => {
               <span>Rating:{e.rating.rate} </span>
               <FontAwesomeIcon icon={faStar} />
             </div>
+            <button>Add to Basket</button>
           </div>
         ))}
       </div>
