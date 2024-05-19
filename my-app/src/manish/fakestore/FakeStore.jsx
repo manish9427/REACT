@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
-import "../Manish.css";
+import "./FakeStore.css";
 
 const FakeStore = () => {
   const [products, setProducts] = useState([]);
