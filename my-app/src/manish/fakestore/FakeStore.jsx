@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import "./FakeStore.css";
+import { useNavigate } from "react-router-dom";
 
 const FakeStore = () => {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
   
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/")
@@ -13,6 +15,9 @@ const FakeStore = () => {
         setProducts(json);
       });
   }, []);
+  const handleAddToBasket = (product) => {
+    navigate(`/product/${product.id}`,{state : {product}})
+  };
 
   return (
     <div>
@@ -28,7 +33,7 @@ const FakeStore = () => {
               <span>Rating: {product.rating.rate}</span>
               <FontAwesomeIcon icon={faStar} />
             </div>
-            <button>Add to Basket</button>
+            <button onClick={()=>handleAddToBasket(product)}>Add to Basket</button>
           </div>
         ))}
       </div>
