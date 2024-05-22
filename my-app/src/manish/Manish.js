@@ -10,12 +10,12 @@ const Manish = () => {
   return (
     <Router>
       <Routes>
-        <Route path="" element={<FakeStore/>}/>
-        <Route path="/product/:id" element={<ProductDetails/>}/>
-        {/* <Route path="" element={<Counter/>}/>
+        {/* <Route path="" element={<FakeStore/>}/>
+        <Route path="/product/:id" element={<ProductDetails/>}/> */}
+        <Route path="" element={<Counter/>}/>
         <Route path="" element={<Timer />}/>
         <Route path="" element={<StopWatch />}/>
-        <Route path="" element={<StopWatch />}/> */}
+        <Route path="" element={<StopWatch />}/>
       </Routes>
     </Router>
 
