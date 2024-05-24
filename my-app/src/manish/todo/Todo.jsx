@@ -1,5 +1,7 @@
 export const Todo = () => {
-    return (<div>
+    return (
+    <div>
         <h1>Todo</h1>
-    </div>)
+    </div>
+    )
 }
