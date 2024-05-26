@@ -22,15 +22,18 @@ export const Todo = () => {
         }
     }
     return (
-    <div style={style}>
-        <h1>Todo</h1>
-        <input onChange={handleInputChange} type="text"  placeholder='Enter the task' value={todo}/>
-        <button onClick={handleSubmit}>Submit</button>
-        <div>
-            {
-                todos.map((item,index)=>(<h1 key={index}>{index+1} ={item}</h1>))
-            }
-        </div>
-    </div>
+        <>
+            <h1>Todo</h1>
+            <div style={style}>
+                <input onChange={handleInputChange} type="text"  placeholder='Enter the task' value={todo}/>
+                <button onClick={handleSubmit}>Submit</button>
+            </div>
+            <h1>List</h1>
+            <ul style={style}>
+                {
+                    todos.length>0 ? (todos.map((item,index)=>(<li key={index}>{item}</li>))):(<p>Todo is Empty</p>)
+                }
+            </ul>
+        </>
     )
 }
