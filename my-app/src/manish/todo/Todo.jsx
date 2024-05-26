@@ -26,11 +26,11 @@ export const Todo = () => {
         <h1>Todo</h1>
         <input onChange={handleInputChange} type="text"  placeholder='Enter the task' value={todo}/>
         <button onClick={handleSubmit}>Submit</button>
-        <ul>
+        <div>
             {
-                todos.map((item,index)=>(<li key={index}>{item}</li>))
+                todos.map((item,index)=>(<h1 key={index}>{index+1} ={item}</h1>))
             }
-        </ul>
+        </div>
     </div>
     )
 }
