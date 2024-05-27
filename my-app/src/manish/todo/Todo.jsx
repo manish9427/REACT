@@ -29,11 +29,11 @@ export const Todo = () => {
                 <button onClick={handleSubmit}>Submit</button>
             </div>
             <h1>List</h1>
-            <ul style={style}>
+            <div style={style}>
                 {
                     todos.length>0 ? (todos.map((item,index)=>(<li key={index}>{item}</li>))):(<p>Todo is Empty</p>)
                 }
-            </ul>
+            </div>
         </>
     )
 }
