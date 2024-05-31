@@ -20,6 +20,7 @@ export const Todo = () => {
             <input type="text" onChange={handleInput}  value={todo}/>
             <button onClick={handleSubmit}>Submit</button>
             <hr />
+            <h1>List</h1>
             <ul>{todos.map((value,index)=>(
                 <li key={index}>
                     {value}
