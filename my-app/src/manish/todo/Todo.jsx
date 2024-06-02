@@ -19,7 +19,6 @@ export const Todo = () => {
             <h1>todo</h1>
             <input type="text" onChange={handleInput}  value={todo}/>
             <button onClick={handleSubmit}>Submit</button>
-            <h1>mmbn</h1>
             <hr />
             <h1>List</h1>
             <ul>{todos.map((value,index)=>(
