@@ -12,3 +12,5 @@ const person = [
     {name:'manoj', age:23},
     {name:'ajay', age:20}
 ]
+
+person.forEach((person,index,arr)=>{console.log(index)})
