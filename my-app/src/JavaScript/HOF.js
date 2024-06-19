@@ -24,4 +24,9 @@ console.log(adult);
 const totalAge = person.reduce((sum,person)=>sum+person.age,0);
 console.log(totalAge);
 
-const  splice = person.filter((person)=>dhfjhjfhj
+const  removePerson = person.splice(1,1);
+console.log(removePerson);
+console.log(person);
+
+const SliceRemove = person.slice(0,2);
+console.log(SliceRemove);
