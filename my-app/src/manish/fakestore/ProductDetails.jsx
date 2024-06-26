@@ -15,7 +15,7 @@ export  const ProductDetails = () => {
             <p>Price: ${product.price}</p>
             <p>{product.description}</p>
             <div className="rating">
-              <span>Rating: {product.rating.rate}</span>
+              <span>Product Rating: {product.rating.rate}</span>
               <FontAwesomeIcon icon={faStar} />
             </div>
           </div>
