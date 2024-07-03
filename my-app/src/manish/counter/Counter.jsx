@@ -10,7 +10,7 @@ const Counter = () => {
     setData(data - 1);
   };
   const reset = () => {
-    setData(1);
+    setData(0);
   };
   return (
     <div>
