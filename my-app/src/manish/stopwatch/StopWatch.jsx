@@ -12,7 +12,7 @@ const StopWatch = () => {
     let interval;
     if (isRunning && !isPaused) {
       interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 10); // Update time every 10 milliseconds
+        setTime((prevTime) => prevTime + 10); // Update time every 10 ms
       }, 10); // Update every 10 milliseconds
     } else {
       clearInterval(interval);
