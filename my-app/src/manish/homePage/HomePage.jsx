@@ -9,9 +9,10 @@ const HomePage = () => {
       <ul className='home-list'>
         <li><Link className='home-link' to="/counter">Counter</Link></li>
         <li><Link className='home-link' to="/timer">Timer</Link></li>
-        <li><Link className='home-link' to="/stopwatch">StopWatch</Link></li>
-        <li><Link className='home-link' to="/fakestore">FakeStore</Link></li>
+        <li><Link className='home-link' to="/stopwatch">Stop Watch</Link></li>
+        <li><Link className='home-link' to="/fakestore">Fake Store</Link></li>
         <li><Link className='home-link' to="/todo">Todo</Link></li>
+        <li><Link className='home-link' to="/progressBar">Progress Bar</Link></li>
       </ul>
     </div>
   );

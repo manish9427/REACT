@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import { ProductDetails } from "./fakestore/ProductDetails";
 import { Todo } from "./todo/Todo";
 import HomePage from "./homePage/HomePage";
+import ProgressBar from "./progress-bar/ProgressBar";
 const Manish = () => {
   return (
     <Router>
@@ -19,6 +20,7 @@ const Manish = () => {
         <Route path="/fakestore" element={<FakeStore/>}/>
         <Route path="/product/:id" element={<ProductDetails/>}/>
         <Route path="/todo" element={<Todo/>}/>
+        <Route path="/progressBar" element={<ProgressBar/>}/>
       </Routes>
     </Router>
 
